@@ -1,0 +1,50 @@
+.primary-navigation {
+    position: sticky;
+    z-index: 100;
+    top: -1px; /* top: 0 leaves a 1px gap at the top of the page */
+    right: 0;
+    left: 0;
+    background-color: var(--clr-darkest);
+
+    &.shadow {
+        box-shadow: -2px 10px 5px 0px var(--page-header-shadow);
+    }
+    & ul {
+        max-width: 60rem;
+        margin: var(--horz-center);
+        list-style: none;
+        display: var(--flex);
+        flex-wrap: wrap;
+        gap: 2rem;
+        align-items: baseline;
+        justify-content: space-around;
+        padding: 3.2rem 0;
+
+        @media screen and (width <= 600px) {
+            padding-inline-start: 1rem;
+            padding-inline-end: 1rem;
+        }
+
+        & li {
+            flex-shrink: 0;
+        }
+    }
+    & a {
+        color: var(--clr-lightest);
+        text-decoration: none;
+        border-bottom: 5px solid var(--clr-mid);
+        padding-block-end: 0.5rem;
+
+        /* This stops persistent link highlight after mobile view click */
+        @media (hover: hover) {
+            &:hover {
+                border-bottom-color: var(--clr-lightest);
+            }
+        }
+
+        &.active {
+            border-bottom-color: var(--clr-lightest);
+            transition: border-bottom-color 250ms linear;
+        }
+    }
+}

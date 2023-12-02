@@ -1,0 +1,29 @@
+:root {
+    --clr-light-blue: rgb(135, 206, 235);
+    --clr-blue: rgb(0, 117, 255);
+    --clr-lightest: white;
+    --clr-mid: #555;
+    --clr-dark: #333;
+    --clr-darker: #222;
+    --clr-darkest: black;
+    --clr-code-bg: beige;
+    --clr-warning: red;
+
+    --highlight: var(--clr-light-blue);
+    --page-header-shadow: rgba(0, 0, 0, 0.28);
+
+    /* Light theme (default) */
+    --body-bg: var(--clr-lightest);
+    --body-txt: var(--clr-darkest);
+    --main-link: var(--clr-blue);
+    --article-bg: var(--clr-lightest);
+    --article-border: var(--clr-darkest);
+}
+
+.dark-theme {
+    --body-bg: var(--clr-dark);
+    --body-txt: var(--clr-lightest);
+    --main-link: var(--clr-light-blue);
+    --article-bg: var(--clr-darker);
+    --article-border: var(--clr-darkest);
+}

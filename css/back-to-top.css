@@ -1,0 +1,26 @@
+.back-to-top {
+    background-color: var(--clr-blue);
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    border-radius: 0.5rem 0 0 0;
+
+    &.show {
+        clip: auto;
+        height: auto;
+        overflow: visible;
+    }
+    & a {
+        color: white;
+        font-weight: 600;
+        display: block;
+        padding: 0.5rem 1rem;
+
+        &::after {
+            content: " \2191";
+        }
+    }
+}
