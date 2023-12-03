@@ -16,11 +16,12 @@ The JavaScript achieves 3 things:
 
 - ES6 Modules (no transpilation to ES5)
 
-1. `/modules/article-header-intersection-observer` adds / removes the `nav` shadow and the 'Back to top' link on scroll.
-2. `/modules/article-section-headings-intersection-observer.js` adds the highlight to the menu links and the underline to the `section` headings.
-3. `/modules/primary-navigation-resize-observer.js` dynamically calculates the height of the `nav`. The resulting value is printed as a `style` declaration on the `html` element using `scroll-padding-top`.
+1. `js/modules/observers/article-header-intersection-observer` adds / removes the `nav` shadow and the 'Back to top' link on scroll.
+2. `js/modules/observers/article-section-headings-intersection-observer.js` adds the highlight to the menu links and the underline to the `section` headings.
+   - The `js/modules/find-link.js` function is imported.
+3. `js/modules/observers/primary-navigation-resize-observer.js` dynamically calculates the height of the `nav`. The resulting value is printed as a `style` declaration on the `html` element using `scroll-padding-top`.
 
-- Additionally, `/modules/theme-switcher.js` provides dark mode toggle functionality. The selected mode is saved to local storage.
+- Additionally, `js/modules/theme-switcher.js` provides dark mode toggle functionality. The selected mode is saved to local storage.
 
 ## CSS
 
