@@ -11,19 +11,26 @@ export default function articleSectionHeadingsIntersectionObserver() {
   const articleHeadingsObserver = new IntersectionObserver(function (entries) {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        menuLinks.find((link) => {
-          const linkFrag = link.href.split("#")[1]
-          if (entry.target.id === linkFrag) {
-            return link.classList.add("active")
-          } else {
-            return link.classList.remove("active")
-          }
-        })
+        entry.target.classList.add("highlight")
+        findLink(menuLinks, entry)
+      } else {
+        entry.target.classList.remove("highlight")
       }
     })
   }, articleHeadingsOptions)
 
   articleHeadings.forEach((heading) => {
     articleHeadingsObserver.observe(heading)
+  })
+}
+
+function findLink(menuLinks, entry) {
+  menuLinks.find((link) => {
+    const linkFrag = link.href.split("#")[1]
+    if (entry.target.id === linkFrag) {
+      return link.classList.add("active")
+    } else {
+      return link.classList.remove("active")
+    }
   })
 }
