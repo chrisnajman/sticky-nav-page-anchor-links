@@ -3,7 +3,7 @@
     top: 0.5rem;
     right: 1rem;
     z-index: 300;
-    width: fit-content;
+    width: -moz-fit-content; width: fit-content;
 }
 
 .theme-icon {
