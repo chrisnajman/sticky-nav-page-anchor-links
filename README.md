@@ -31,6 +31,10 @@ The JavaScript achieves 3 things:
 - Files are organised internally using CSS nesting.
 - Dark theme option.
 
+## WAVE Web Accessibility Evaluation Tools Report
+
+- [Automated accessibility analysis results](https://wave.webaim.org/report#/https://chrisnajman.github.io/sticky-nav-page-anchor-links/)
+
 ## Testing
 
 Windows 10:
