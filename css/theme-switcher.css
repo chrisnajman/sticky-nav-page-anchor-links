@@ -3,7 +3,8 @@
     top: 0.5rem;
     right: 1rem;
     z-index: 300;
-    width: -moz-fit-content; width: fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
 }
 
 .theme-icon {
@@ -18,6 +19,7 @@
     align-items: center;
     padding: 0.5rem 0.5rem 0.75rem 0;
     border-bottom: 5px solid var(--clr-mid);
+    background-color: var(--clr-darkest);
     color: var(--clr-lightest);
     font-size: clamp(1.2rem, 1.1rem + 0.4444vw, 1.6rem);
 

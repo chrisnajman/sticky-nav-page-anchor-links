@@ -215,6 +215,7 @@ button {
 
 /* Skip link */
 .skip-link {
+    background-color: var(--clr-darkest);
     color: var(--clr-lightest);
     text-decoration: none;
     font-weight: 600;
